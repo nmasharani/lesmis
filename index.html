@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Les Misérables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src='ismobile.js' type='text/javascript'></script>
+	<script type='text/javascript'>
+if (isMobile()) {
+	window.location.replace('./m/index.html')
+}
+	</script>
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom:40px;
+        background-color: #000000;
+        color:#f0f0f0;
+      }
+
+      .container-narrow > img {
+        width: 100%;
+        height: auto;
+      }
+
+      .footer > img {
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:50px;
+        height:60px;
+        width:auto;
+      }
+
+      map{
+        outline: 0;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        width: 900px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      .lead {
+        font-size:18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-narrow">
+      <div class="lead">
+      <img src="banner.jpg" usemap=#example border=0 hidefocus="true">
+      <map name=example>
+        <area onfocus="blur();" shape=rect coords=95,97,325,592 href="about.html"> 
+        <area onfocus="blur();" shape=rect coords=325,97,565,592 href="company.html"> 
+        <area onfocus="blur();" shape=rect coords=565,97,801,592 href="tickets.html">
+      </map>
+      </div>
+    </div> <!-- /container -->
+
+    <div class="footer">
+      <img src="ramshead.png">
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
