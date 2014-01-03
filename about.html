@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Les Misérables</title>
+    <title>About Les Misérables</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -26,7 +26,7 @@ if (isMobile()) {
         color:#f0f0f0;
       }
 
-      .lead > img {
+      .container-narrow > img {
         width: 100%;
         height: auto;
       }
@@ -54,7 +54,7 @@ if (isMobile()) {
       /* Custom container */
       .container-narrow {
         margin: 0 auto;
-        width: 900px;
+        width: 600px;
       }
       .container-narrow > hr {
         margin: 30px 0;
@@ -63,18 +63,28 @@ if (isMobile()) {
       .lead {
         font-size:18px;
       }
+
+      .lead > img {
+        width:100%;
+        height:5px;
+      }
+
+      .pagetitle {
+        font-family: janeausten;
+        text-align: center;
+        font-size:55px;
+      }
     </style>
   </head>
 
   <body>
     <div class="container-narrow">
       <div class="lead">
-      <img src="banner.jpg" usemap=#example border=0 hidefocus="true">
-      <map name=example>
-        <area onfocus="blur();" shape=rect coords=95,97,325,592 href="about.html"> 
-        <area onfocus="blur();" shape=rect coords=325,97,565,592 href="castandcrew.html"> 
-        <area onfocus="blur();" shape=rect coords=565,97,801,592 href="tickets.html">
-      </map>
+        <h1 class="pagetitle">About</h1>
+        <img src="line.jpg">
+        <br>
+        <br>
+        <p>Here's some text about Les Misérables.</p>
       </div>
     </div> <!-- /container -->
 
