@@ -19,7 +19,7 @@ if (isMobile()) {
         font-family: "janeausten";
         src: url('fonts/janeausten.ttf');
       } 
-      
+
       * {
         margin: 0;
       }
@@ -44,15 +44,15 @@ if (isMobile()) {
         height: auto !important;
         height: 100%;
         padding-top:40px;
-        margin: 0 auto -120px; /* the bottom margin is the negative value of the footer's height */
+        margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */
       }
 
       .footer {
-        height: 120px; /* .push must be the same height as .footer */
+        height: 80px; /* .push must be the same height as .footer */
       }
 
       .push {
-        height:120px;
+        height:80px;
       }
 
       .lead > img {
@@ -89,6 +89,7 @@ if (isMobile()) {
   </head>
 
   <body>
+    <div class="wrapper">
     <div class="container-narrow">
       <div class="lead">
       <img src="banner.jpg" usemap=#example border=0 hidefocus="true">
@@ -99,6 +100,8 @@ if (isMobile()) {
       </map>
       </div>
     </div> <!-- /container -->
+    <div class="push"></div>
+  </div>
 
     <div class="footer">
       <img src="ramshead.png">
