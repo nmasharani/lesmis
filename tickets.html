@@ -18,24 +18,36 @@ if (isMobile()) {
       @font-face{
         font-family: "janeausten";
         src: url('fonts/janeausten.ttf');
-      } 
+      }
+
+      * {
+        margin: 0;
+      }
+
+      html {
+        height:100%;
+      }
+
       body {
-        padding-top: 40px;
-        padding-bottom:40px;
+        height: 100%;
         background-color: #000000;
         color:#f0f0f0;
       }
 
-      .container-narrow > img {
-        width: 100%;
-        height: auto;
+      .wrapper {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        padding-top:40px;
+        margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
       }
 
       .footer {
-        position:absolute;
-        bottom:0;
-        width:100%;
-        height:auto;
+        height: 100px; /* .push must be the same height as .footer */
+      }
+
+      .push {
+        height:100px;
       }
 
       .footer > img {
@@ -56,8 +68,10 @@ if (isMobile()) {
         margin: 0 auto;
         width: 600px;
       }
-      .container-narrow > hr {
-        margin: 30px 0;
+
+      .container-narrow > img {
+        width: 100%;
+        height: auto;
       }
 
       .lead {
@@ -78,6 +92,7 @@ if (isMobile()) {
   </head>
 
   <body>
+    <div class="wrapper">
     <div class="container-narrow">
       <div class="lead">
         <h1 class="pagetitle">Tickets</h1>
@@ -88,6 +103,8 @@ if (isMobile()) {
         <p>Check back in March 2014 for information about tickets.</p>
       </div>
     </div> <!-- /container -->
+    <div class="push"></div>
+  </div>
 
     <div class="footer">
       <img src="ramshead.png">
