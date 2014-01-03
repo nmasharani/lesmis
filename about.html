@@ -19,9 +19,16 @@ if (isMobile()) {
         font-family: "janeausten";
         src: url('fonts/janeausten.ttf');
       } 
+      * {
+        margin: 0;
+      }
+
+      html {
+        height:100%;
+      }
+
       body {
-        padding-top: 40px;
-        padding-bottom:40px;
+        height: 100%;
         background-color: #000000;
         color:#f0f0f0;
       }
@@ -31,11 +38,20 @@ if (isMobile()) {
         height: auto;
       }
 
+      .wrapper {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        padding-top:40px;
+        margin: 0 auto -120px; /* the bottom margin is the negative value of the footer's height */
+      }
+
       .footer {
-        position:absolute;
-        bottom:0;
-        width:100%;
-        height:auto;
+        height: 120px; /* .push must be the same height as .footer */
+      }
+
+      .push {
+        height:120px;
       }
 
       .footer > img {
@@ -60,11 +76,13 @@ if (isMobile()) {
 
       /* Custom container */
       .container-narrow {
-        margin: 0 auto;
+        margin:auto;
         width: 600px;
       }
-      .container-narrow > hr {
-        margin: 30px 0;
+
+      .container-narrow > img {
+        width: 100%;
+        height: auto;
       }
 
       .lead {
@@ -85,6 +103,7 @@ if (isMobile()) {
   </head>
 
   <body>
+    <div class="wrapper">
     <div class="container-narrow">
       <div class="lead">
         <h1 class="pagetitle">About</h1>
@@ -105,9 +124,11 @@ if (isMobile()) {
         </p>
       </div>
     </div> <!-- /container -->
+    <div class="push"></div> 
+  </div><!-- /wrapper -->
 
     <div class="footer">
-      <p>Les Misérables Is presented through special arrangement with Music Theatre International (MTI). All authorized performance materials are also supplied by MTI. 421 West 54th Street, New York, NY 10019 Phone: 212-541-4684 Fax: 212-397-4684 <a href="http://www.MTIShows.com">www.MTIShows.com</a> - See more at: <a href="http://www.mtishows.com/show_detail.asp?showid=000134#sthash.vSfVBm6l.dpuf">http://www.mtishows.com/show_detail.asp?showid=000134#sthash.vSfVBm6l.dpuf</a>.</p>
+      <p>Les Misérables Is presented through special arrangement with Music Theatre International (MTI). All authorized performance materials are also supplied by MTI. 421 West 54th Street, New York, NY 10019 Phone: 212-541-4684 Fax: 212-397-4684 www.MTIShows.com - See more at: http://www.mtishows.com/show_detail.asp?showid=000134#sthash.vSfVBm6l.dpuf.</p>
       <br>
       <img src="ramshead.png">
     </div>
