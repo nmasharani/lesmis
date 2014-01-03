@@ -34,6 +34,7 @@ if (isMobile()) {
       .footer {
         position:absolute;
         bottom:0;
+        /*margin-top:20px;*/
         width:100%;
         height:auto;
       }
@@ -45,6 +46,13 @@ if (isMobile()) {
         height:60px;
         margin-bottom:20px;
         width:auto;
+      }
+
+      .footer > p {
+        margin: 0 auto;
+        width: 600px;
+        font-size:16px;
+        text-align: center;
       }
 
       map{
@@ -59,11 +67,6 @@ if (isMobile()) {
       .container-narrow > hr {
         margin: 30px 0;
       }
-
-      .lead {
-        font-size:18px;
-      }
-
       .lead > img {
         width:100%;
         height:5px;
@@ -74,21 +77,81 @@ if (isMobile()) {
         text-align: center;
         font-size:55px;
       }
+
+      .two {
+        text-align: center;
+        font-size:25px;
+      }
+
+      .one {
+        font-family: janeausten;
+        text-align: center;
+        font-size:55px;
+      }
+
+      .three {
+        font-size:20px;
+        text-align: center;
+      }
+
+      .four {
+        font-size:16px;
+        text-align: center;
+      }
+
+      .five {
+        font-size:14px;
+        text-align: center;
+      }
     </style>
   </head>
 
   <body>
     <div class="container-narrow">
       <div class="lead">
-        <h1 class="pagetitle">Cast and Crew</h1>
+        <!-- <h1 class="pagetitle">Cast and Crew</h1>
         <img src="line.jpg">
         <br>
-        <br>
-        <p>Here's some list of cast and crew.</p>
+        <br> -->
+        <div class="two">
+          <p>JOIN THE REVOLUTION!</p>
+          <p>Audition for Ram’s Head Theatrical Society’s Spring Show 2014:</p>
+        </div>
+        <div class="one">
+          <p>Les Misérables</p>
+        </div>
+        <div class="three">
+          <p>
+            <a href="http://vimeo.com/83249772">Watch the trailer!</a><br>
+            <a href="http://tinyurl.com/lesmisauditions">Sign up for cast auditions!</a><br>
+            <a href="http://tinyurl.com/lesmisorchestra">Sign up for orchestra auditions!</a>
+          </p>
+        </div>
+        <img src="line.jpg"><br>
+        <!-- 
+        <iframe src="http://player.vimeo.com/video/83249772" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+        <div class="four">
+          <p>
+            College cast auditions* are January 11th-14th, 2014<br>
+            Child auditions are January 8th-9th, 2014<br>
+            Orchestra auditions are January 12th, 2014
+          </p>
+        </div>
+        <div class="five">
+          <p>* For this production of Les Misérables we will be looking to cast straight actors for a project to accompany the production in addition to singer-actors for the main stage cast. Straight actors will be provided with sides to prepare after signing up for an audition.</p>
+        </div>
+        <div class="four">
+          <p>
+            Questions about cast auditions? <a href="mailto:bpowell1@stanford.edu">Contact Stage Manager Brandon Powell</a>.<br>
+            Questions about orchestra auditions? <a href="mailto:makulumy@stanford.edu">Contact Music Director Makulumy Alexander-Hills</a>.
+          </p>
+        </div>
       </div>
     </div> <!-- /container -->
 
     <div class="footer">
+      <p>Ram's Head encourages people of all backgrounds to audition.</p>
+      <br>
       <img src="ramshead.png">
     </div>
 
