@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src='ismobile.js' type='text/javascript'></script>
-	<script type='text/javascript'>
-if (isMobile()) {
-	window.location.replace('./m/index.html')
-}
-	</script>
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
@@ -19,7 +13,6 @@ if (isMobile()) {
         font-family: "janeausten";
         src: url('fonts/janeausten.ttf');
       } 
-
       * {
         margin: 0;
       }
@@ -32,6 +25,18 @@ if (isMobile()) {
         height: 100%;
         background-color: #000000;
         color:#f0f0f0;
+      }
+
+      .castcol {
+        float:left;
+        max-width:500px;
+        width:400px;
+        padding-right:10px;
+      }
+
+      .container-narrow > img {
+        width: 100%;
+        height: auto;
       }
 
       .wrapper {
@@ -50,22 +55,6 @@ if (isMobile()) {
         height:170px;
       }
 
-      .footer > img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height:60px;
-        width:auto;
-        margin-bottom:20px;
-      }
-
-      .footer > p {
-        margin: 0 auto;
-        width: 600px;
-        font-size:16px;
-        text-align: center;
-      }
-
       .column {
         width:150px;
         padding:10px;
@@ -75,20 +64,45 @@ if (isMobile()) {
         font-family:janeausten;
       }
 
+      .footer > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:60px;
+        margin-bottom:20px;
+        width:auto;
+      }
+
+      .footer > p {
+        margin: 0 auto;
+        width: 600px;
+        font-size:10px;
+        text-align: center;
+      }
+
       map{
         outline: 0;
       }
 
+      .copyright {
+        font-size:11px;
+        /*text-align:center;*/
+        padding-top:30px;
+      }
       /* Custom container */
       .container-narrow {
         margin:auto;
-        width: 600px;
+        width: 800px;
         overflow: hidden;
       }
 
       .container-narrow > img {
         width: 100%;
         height: auto;
+      }
+
+      .lead {
+        font-size:18px;
       }
 
       .lead > img {
@@ -101,32 +115,6 @@ if (isMobile()) {
         text-align: center;
         font-size:55px;
       }
-
-      .two {
-        text-align: center;
-        font-size:25px;
-      }
-
-      .one {
-        font-family: janeausten;
-        text-align: center;
-        font-size:55px;
-      }
-
-      .three {
-        font-size:20px;
-        text-align: center;
-      }
-
-      .four {
-        font-size:16px;
-        text-align: center;
-      }
-
-      .five {
-        font-size:14px;
-        text-align: center;
-      }
     </style>
   </head>
 
@@ -134,48 +122,158 @@ if (isMobile()) {
     <div class="wrapper">
     <div class="container-narrow">
       <div class="lead">
-        <!-- <h1 class="pagetitle">Cast and Crew</h1>
+        <h1 class="pagetitle">Cast &amp; Crew</h1>
         <img src="line.jpg">
         <br>
-        <br> -->
-        <div class="two">
-          <p>JOIN THE REVOLUTION!</p>
-          <p>Audition for Ram’s Head Theatrical Society’s Spring Show 2014:</p>
-        </div>
-        <div class="one">
-          <p>Les Misérables</p>
-        </div>
-        <div class="three">
-          <p>
-            <a href="http://vimeo.com/83249772">Watch the trailer!</a><br>
-            <a href="http://tinyurl.com/lesmisauditions">Sign up for cast auditions!</a><br>
-            <a href="http://tinyurl.com/lesmisorchestra">Sign up for orchestra auditions!</a>
-          </p>
-        </div>
-        <img src="line.jpg"><br>
-        <!-- 
-        <iframe src="http://player.vimeo.com/video/83249772" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-        <div class="four">
-          <p>
-            College cast auditions* are January 11th-14th, 2014<br>
-            Child auditions are January 8th-9th, 2014<br>
-            Orchestra auditions are January 12th, 2014
-          </p>
-        </div>
-        <div class="five">
-          <p>* For this production of Les Misérables we will be looking to cast straight actors for a project to accompany the production in addition to singer-actors for the main stage cast. Straight actors will be provided with sides to prepare after signing up for an audition.</p>
-        </div>
-        <div class="four">
-          <p>
-            Questions about cast auditions? <a href="mailto:bpowell1@stanford.edu">Contact Stage Manager Brandon Powell</a>.<br>
-            Questions about orchestra auditions? <a href="mailto:makulumy@stanford.edu">Contact Music Director Makulumy Alexander-Hills</a>.
-          </p>
-          <p>Ram's Head encourages people of all backgrounds to audition.</p>
-        </div>
+        <br>
+        <div> <!--row 1 -->
+          <div class="castcol">
+            <h3>Cast</h3>
+            <p>
+            Jean Valjean - Matthew Billman<br>
+            Inspector Javert - Praveen Ramesh<br>
+            Fantine - Justine DeSilva<br>
+            Eponine - Amy DuBose<br>
+            Cosette - Maddie McClung<br>
+            Marius - David Lopez<br>
+            Enjolras - Graham Roth<br>
+            Thenardier - Brady Richter<br>
+            Mme Thenardier - Jessia Hoffman<br>
+            Bishop - Alex Cope<br>
+            Foreman - Cameron Campbell<br>
+            Factory Girl - Jessica Waldman<br>
+            Old Woman - Megan Gage<br><br>
+            Gavroche - Chris Apy<br>
+            Gavroche - TonyBoy Marin<br>
+            Young Cosette - Melina Soberg<br>
+            Young Cosette - Sasha Steiner<br>
+            </p>
+          </div>
+          <div class="castcol">
+            <h3>Main Stage Ensemble</h3>
+            <p>
+            Addy Mendoza<br>
+            Alex Scott<br>
+            Alexander Ronneburg<br>
+            Elliott Bomboy<br>
+            Eric Hallett<br>
+            Holly Dayton<br>
+            Jace Casey<br>
+            Jack Lundquist<br>
+            Jeff Bennett<br>
+            Josh Siegel<br>
+            Leena Yin<br>
+            Louis Lagalante<br>
+            Lucas Del Toro<br>
+            Melanie Arnold<br>
+            Paul Gregg<br>
+            Peter Kurzner<br>
+            Saya Jenks<br>
+            </p>
+          </div>
+        </div><!--/row1-->
+        <div style="clear:both;"></div>
+        <div> <!-- row 2 -->
+          <div class="castcol">
+            <h3>Opera-Going Experience Project</h3>
+            <p>
+            Alec Glassford<br>
+            Allison Dods<br>
+            Ariel Ledesma<br>
+            Carra Rentie<br>
+            Connor Raikes<br>
+            Edith Preciado<br>
+            Erin Baumann<br>
+            Issra Omer<br>
+            Jackie Becker<br>
+            Leslie Bridges<br>
+            Marlon Antunez<br>
+            Michael Goodemote<br>
+            Mirae Lee<br>
+            Nishant Karandikar<br>
+            Sarai Gould<br>
+            Victor Spielberg Verdejo<br>
+            </p>
+          </div>
+          <div class="castcol">
+            <h3>Orchestra</h3>
+            <p>
+            James Spicer - Conductor<br>
+            Akiko Kozato<br>
+            Andrew Aguilar<br>
+            Andrew Lovett<br>
+            Andrew Lan<br>
+            Ariana Johnson<br>
+            Carravita Pape-Calabrese<br>
+            Collin Christner<br>
+            Danny Bulmash<br>
+            Ethan Straffin<br>
+            Harry Doshay<br>
+            Helen Xiong<br>
+            Jason Griffin<br>
+            Jian Yang "Lumpy" Lum<br>
+            Kayland Harrison<br>
+            Kelly Parker<br>
+            Linnea Tracy<br>
+            Mark Cuson<br>
+            Max Vilgalys<br>
+            Rosie La Puma<br>
+            Ryan Voldstad<br>
+            Stephanie Palocz<br>
+            Victoria Wang<br>
+            </p>
+          </div>
+        </div><!--/row2-->
+        <div style="clear:both;"></div>
+        <div> <!-- row 3 -->
+          <div class="castcol">
+            <h3>Staff</h3>
+            <p>
+            Producer - Kelly Gregg<br>
+            Director - Sammi Cannold<br>
+            Music Director - Makulumy Alexander-Hills<br>
+            Vocal Director - James Spicer<br>
+            Stage Manager - Brandon Powell<br>
+            Videographer - Julia Starr<br>
+            Website Designer - Nisha Masharani<br>
+            Assistant Producer - Emily Ashton<br>
+            Assistant Producer - Rob Biedry<br>
+            Assistant Producer - Tracey Atkinson<br>
+            Assistant Producer - Vanessa Moody<br>
+            Assistant Director - Elizabeth Knarr<br>
+            Assistant Music Director - Carravtia Pape-Calabrese<br>
+            Assistant Stage Manager - Marty Semilla<br>
+            Assistant Stage Manager - Sophia Laurenzi<br>
+            Assistant Stage Manager - Stephanie Sapp<br>
+            </p>
+          </div>
+          <div class="castcol">
+            <h3>Design</h3>
+            <p>
+            Technical Director - Kathy Woo<br>
+            Set Design - Keenan Molner<br>
+            Light Design - Matt Lathrop<br>
+            Sound Design - Brigitte Wittmer<br>
+            Dramaturg - Abby Gopez<br>
+            Dramaturg - Benina Stern<br>
+            Assistant Technical Director - Madelaine Bixler<br>
+            Assistant Set Design - Charlie Yang<br>
+            Assistant Set Design - Graham Roth<br>
+            Assistant Set Design - Neil Hamamoto<br>
+            Assistant Light Design - Chenyi Shi<br>
+            Assistant Light Design - James Sherwood<br>
+            Assistant Light Design - Nisha Masharani<br>
+            Assistant Sound Design - Camilla Franklin<br>
+            Assistant Sound Design - Claudia Dodge<br>
+            Assistant Sound Design - Nathan Ramos<br>
+            </p>
+          </div>
+        </div><!--/row3-->
+
       </div>
     </div> <!-- /container -->
-    <div class="push"></div>
-  </div>
+    <div class="push"></div> 
+  </div><!-- /wrapper -->
 
     <div class="footer">
       <div class="container-narrow">
