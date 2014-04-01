@@ -16,9 +16,10 @@ if (isMobile()) {
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       @font-face{
-        font-family: "janeausten";
-        src: url('fonts/janeausten.ttf');
+        font-family: "essays1743";
+        src: url('fonts/Essays1743.ttf');
       } 
+
       * {
         margin: 0;
       }
@@ -60,7 +61,7 @@ if (isMobile()) {
         text-align:center;
         float:left;
         font-size:20px;
-        font-family:janeausten;
+        font-family:"essays1743";
       }
 
       .footer > img {
@@ -104,15 +105,22 @@ if (isMobile()) {
         font-size:18px;
       }
 
-      .lead > img {
+      .line {
         width:100%;
         height:5px;
       }
 
       .pagetitle {
-        font-family: janeausten;
+        font-family: "essays1743";
         text-align: center;
         font-size:55px;
+      }
+
+      .poster {
+        width: 40%; 
+        height: auto; 
+        margin-left:20px; 
+        margin-bottom:20px;
       }
     </style>
   </head>
@@ -122,11 +130,12 @@ if (isMobile()) {
     <div class="container-narrow">
       <div class="lead">
         <h1 class="pagetitle">About</h1>
-        <img src="line.jpg">
+        <img class="line" src="line2.jpg">
         <br>
         <br>
+        <a href="lesmiserables.jpg"><img class="poster" align="right" src="lesmiserables.jpg"/></a>
         <p>
-        Les Misérables will be performed April 11-12 &amp; 17-19, 2014 at 8pm at Stanford University’s Memorial Auditorium. 
+        Les Misérables will be performed April 11-12 &amp; 17-19, 2014 at 8pm at Stanford University’s Memorial Auditorium, with a pre-show performance starting around 7:30pm.
         </p>
         <p>
         Winner of 8 Tony Awards, including Best Musical, Les Misérables is an international sensation that has thrilled generations of audiences around the world. Epic, grand, and uplifting, the musical has spawned hits like &quot;I Dreamed a Dream&quot; and &quot;One Day More&quot; and inspired countless performances and interpretations. With its powerful affirmation of the human spirit, Les Misérables is a true masterpiece and global phenomenon.
@@ -174,7 +183,7 @@ if (isMobile()) {
     <div class="footer">
       <div class="container-narrow">
         <div class="lead">
-          <img src="line.jpg">
+          <img class="line" src="line2.jpg">
         </div>
         <div class="column"><a href="index.html">Home</a></div>
         <div class="column">About</div>
